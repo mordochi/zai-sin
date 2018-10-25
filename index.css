@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* 歡迎畫面 */
+#welcome {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e8845c;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  overflow: scroll;
+  z-index: 100;
+}
+
+#welcome-scroll {
+  width: 60%;
+  height: 200vh;
+  line-height: 100vh;
+  margin: 0 auto;
+}
+
+#welcome-scroll > div {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.square {
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+}
+
+#square-1 {
+  background-color: #fff;
+}
+
+#square-2 {
+  background-color: #fff;
+}
+
+#square-3 {
+  background-color: #fff;
+}
+
+#square-4 {
+  background-color: #fff;
+}
+
+#square-5 {
+  background-color: #fff;
+}
+
+/* nav */
+nav {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  height: 24vw;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .7);
+  line-height: 25vw;
+  padding: 0 2vw;
+  cursor: pointer;
+  z-index: 10;
+}
+
+nav p {
+  font-size: 64px;
+  flex-grow: 1;
+  color: #e8845c;
+}
+
+/* intro */
+#intro {
+  display: grid;
+  grid-template-rows: 1fr 1fr 24vw;
+  height: 100vh;
+  padding: 0 10%;
+  background-image: url("./images/front_house.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-layer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#intro > div:not(#bg-layer) {
+  grid-row-start: 2;
+  position: relative;
+}
+
+#intro h1 {
+  font-size: 96px;
+  color: #fff;
+}
+
+#intro h3 {
+  font-size: 36px;
+  color: #fff;
+}
