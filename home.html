@@ -1,16 +1,18 @@
-<div id="home">
-  <div id="welcome" onscroll="welcomeAnimation('welcome')">
-    <div id="welcome-scroll">
-      <div>
-        <div class="square" id="square-1" data-scroll-speed="3"></div>
-        <div class="square" id="square-2" data-scroll-speed="10"></div>
-        <div class="square" id="square-3" data-scroll-speed="1"></div>
-        <div class="square" id="square-4" data-scroll-speed="2"></div>
-        <div class="square" id="square-5" data-scroll-speed="5"></div>
-      </div>
+<div id="welcome" >
+  <div id="welcome-scroll">
+    <div>
+      <div class="square" id="square-1" data-scroll-speed="3"></div>
+      <div class="square" id="square-2" data-scroll-speed="10"></div>
+      <div class="square" id="square-3" data-scroll-speed="1"></div>
+      <div class="square" id="square-4" data-scroll-speed="2"></div>
+      <div class="square" id="square-5" data-scroll-speed="5"></div>
     </div>
   </div>
+</div>
 
+
+
+<div id="home" class="horizontal-block">
   <nav>
     <p>關於我們</p>
     <p>承包業務</p>
@@ -25,4 +27,24 @@
       <h3>下雨也無妨</h3>
     </div>
   </div>
+</div>
+
+<div id="about-us" class="horizontal-block">
+  <h1>關於我們</h1>
+</div>
+
+<div id="services" class="horizontal-block">
+  <h1>承包業務</h1>
+</div>
+
+<div id="cases" class="horizontal-block">
+  <h1>案例分析</h1>
+</div>
+
+<div id="contact-us" class="horizontal-block">
+  <h1>聯絡我們</h1>
+</div>
+
+<div id="scroll" onscroll="scrollSection()">
+  <div id="scroll-inner"></div>
 </div>
